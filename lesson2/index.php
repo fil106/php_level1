@@ -84,18 +84,57 @@
     
     /*** Задание 6 ***/
     function power($val, $pow) {
+        $res = 1;
         if($pow < 0) {
-            for($i; $i < $pow; $i++) {
-                $result = 1 / ($pow * $pow);
-                
+
+            for($i=0; $i>$pow; $i--) {
+                $res *= $val;
             }
-            return $result;
-        }else {
-            for($i; $i < $pow; $i++) {
-                $result = $pow * $pow;
+            return 1/$res;
+
+        } else if($pow > 0) {
+
+            for($i=0; $i<$pow; $i++) {
+                $res *= $val;
             }
-            return $result;
+            return $res;
+
+        } else {
+            return false;
         }
     }
-    
-?>
+
+    echo "<br>";
+    echo power(2,-10);
+
+    /*** Задание 7 ***/
+    function timeOut($hour, $minute) {
+        $edH = $hour % 10;
+        $edM = $minute % 10;
+        $res = '';
+
+        if($edH === 1) {
+            $res = $hour . " час";
+        } else if($edH > 1 && $edH < 5) {
+            $res = $hour . " часа";
+        } else if($edH > 4 && $edH < 9 || $edH === 0) {
+            $res = $hour . " часов";
+        }
+
+        $res .= " ";
+
+        if($edM === 1) {
+            $res .= $minute . " минута";
+        } else if($edM > 1 && $edM < 5) {
+            $res .= $minute . " минуты";
+        } else if($edM > 4 && $edM < 9 || $edM === 0) {
+            $res .= $minute . " минут";
+        }
+
+        return $res;
+    }
+
+    echo "<br>";
+    echo timeOut(21,43);
+    echo "<br>";
+    echo timeOut(22,15);
