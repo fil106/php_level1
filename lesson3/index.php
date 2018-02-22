@@ -94,6 +94,12 @@
             for($i=0; $i < 10; do_something($i++))
         ?>
     </p>
+    <h2>Задание 8</h2>
+    <p>
+        <?php
+            search_in_array("К", $cities);
+        ?>
+    </p>
 
 </body>
 </html>
@@ -159,5 +165,22 @@
 
     function do_something($i) {
         echo "$i ";
+    }
+
+    function search_in_array($str, $arr) {
+        $matches = [];
+        foreach($arr as $key => $value) {
+            foreach($value as $index => $city) {
+
+                $res = strpos($city, $str);
+                if ($res === false) {
+
+                } else {
+                    $res .= ;
+                }
+
+            }
+        }
+        print_r($matches);
     }
 ?>
