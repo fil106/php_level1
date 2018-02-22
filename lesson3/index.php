@@ -5,6 +5,7 @@
     <title>Домашка №3</title>
 </head>
 <body>
+
     <h2>Задание 1</h2>
     <p>
         Числа делящиеся на 3 без остатка:<br>
@@ -48,6 +49,7 @@
             $cities = [];
             $cities["Московская область"] = ["Москва", "Зеленоград", "Клин"];
             $cities["Ленинградская область"] = ["Выборг", "Волхов", "Кириши", "Ломоносов"];
+            $cities["Кировская область"] = ["Кирово-Чепецк", "Кирс", "Киров", "Зуевка"];
 
             foreach($cities as $key => $value) {
 
@@ -100,11 +102,18 @@
             search_in_array("К", $cities);
         ?>
     </p>
+    <h2>Задание 9</h2>
+    <p>
+        <?php
+            echo two_in_one("Привет Мир !");
+        ?>
+    </p>
 
 </body>
 </html>
 
 <?php
+
     /*** ФУНКЦИИ ***/
 
     function translitor_in_eng($str) {
@@ -140,7 +149,7 @@
             "Э"=>"E","э"=>"e",
             "Ю"=>"Iu","ю"=>"iu",
             "Я"=>"Ia","я"=>"ia",
-            "ъ"=>"","ь"=>""
+            "ъ"=>"","ь"=>"", "!" => "!", " " => " "
         );
         $arrStr = preg_split("//u", $str,-1, PREG_SPLIT_NO_EMPTY);
         $strOut = "";
@@ -168,7 +177,9 @@
     }
 
     function search_in_array($str, $arr) {
-        $matches = [];
+        $strOut = "<p>Нашлись следующие города:</p>";
+        $strOut .= "<ul>";
+
         foreach($arr as $key => $value) {
             foreach($value as $index => $city) {
 
@@ -176,11 +187,22 @@
                 if ($res === false) {
 
                 } else {
-                    $res .= ;
+                    $strOut .= "<li>$city</li>";
                 }
 
             }
         }
-        print_r($matches);
+
+        $strOut .= "</ul>";
+
+        echo $strOut;
     }
+
+    function two_in_one($str) {
+        $resTranslit = translitor_in_eng($str);
+        $strOut = replace_s($resTranslit);
+
+        return $strOut;
+    }
+
 ?>
