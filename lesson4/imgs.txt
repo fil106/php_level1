@@ -1,0 +1,3 @@
+img/thumbnail/thumb-2.jpg
+img/thumbnail/thumb-football.jpg
+img/thumbnail/thumb-ball.jpg
