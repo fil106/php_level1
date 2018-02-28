@@ -1,5 +1,10 @@
 <?php
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
     require_once("../config/config.php");
+		require_once('../engine/db/functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +19,7 @@
 <body>
 	<div class="popup">
 		<h3>Загрузка файла на сервер</h3>
-		<form action="?" method="post" enctype="multipart/form-data">
+		<form action="../engine/uploadImage.php" method="POST" enctype="multipart/form-data">
 			<input type="file" name="file">
 			<input type="submit" name="upload">
 		</form>

@@ -1,6 +1,6 @@
 function sendFileAjax($url) {
   var fd = new FormData;
-  fd.append('file', );
+
   /* AJAX */
   $.ajax({
     method: 'POST',
