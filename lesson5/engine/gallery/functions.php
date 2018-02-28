@@ -14,7 +14,7 @@
 
   function gallerySingleImage($hrefFull, $hrefThumb, $desc) {
 
-    $str = "<div class='col'>";
+    $str = "<div class='col galery-image'>";
       $str .= "<a href='" . $hrefFull . "'><img src='" . $hrefThumb . "' alt='" . $desc . "'></a>";
     $str .= "</div>";
 
