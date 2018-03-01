@@ -34,16 +34,39 @@
     color: #fff;
 }
 
+.turnBack-btn {
+    float: left;
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
+
+.turnBack-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 #addImg:hover {
     cursor: pointer;
+}
+
+.galery-image {
+    padding: 10px 0;
 }
 
 .galery-image img {
     width: 100%;
 }
 
+#gallery {
+    padding: 10px 20px 20px 20px;
+}
+
 .choosenImage {
     width: 25%;
+    height: 100px;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -51,4 +74,12 @@
 #images {
     display: flex;
     flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.error {
+    color: red;
 }

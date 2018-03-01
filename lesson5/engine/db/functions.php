@@ -24,6 +24,6 @@
 
 		mysqli_close($db);
 
-		return $array_result;
+		return $array_result[0];
 
 	}
