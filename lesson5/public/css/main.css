@@ -4,7 +4,6 @@
     left: 50%;
     margin-left: -250px;
     width: 500px;
-    height: 150px;
     background-color: #eee;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 5px 5px rgba(32,178,170,.5);
@@ -41,4 +40,15 @@
 
 .galery-image img {
     width: 100%;
+}
+
+.choosenImage {
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
 }

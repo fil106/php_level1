@@ -1,4 +1,5 @@
 <?php
+
 	require_once('../config/config.php');
 	require_once('../engine/db/functions.php');
 	require_once('resize.php');
@@ -7,7 +8,7 @@
 
 		$file = $_FILES['file']['tmp_name'];
 		$filename = htmlspecialchars($_FILES['file']['name']);
-		@$imageinfo = getimagesize($file);
+		$imageinfo = getimagesize($file);
 
 		/* проверочка на наличие добавляемого имени в базе */
 		$sql = "SELECT `img-name` FROM `gallery` WHERE `img-name`='$filename'";
@@ -22,8 +23,11 @@
 			$originalImageDest = '../public/img/gallery/original';
 			$thumbnailImageDest = '../public/img/gallery/thumbnail';
 
-			if($imageinfo['mime'] != 'image/jpeg') {
-				echo "Загружаемый файл не картинка формата JPEG!";
+			if($imageinfo['mime'] != 'image/png') {
+
+			    print_r($imageinfo);
+				echo "Загружаемый файл не картинка формата JPEG или PNG!";
+
 			} else {
 				if (move_uploaded_file($file, "$originalImageDest/$filename")) {
 
@@ -34,7 +38,9 @@
 
 					dbExecuteQuery($sql);
 
-				}
+				} else {
+				    echo "Не удалось записать файл на сервер";
+                }
 			}
 		}
 	}

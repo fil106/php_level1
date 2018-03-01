@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
     require_once("../config/config.php");
-		require_once('../engine/db/functions.php');
+    require_once('../engine/db/functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +20,12 @@ ini_set('display_startup_errors', 1);
 	<div class="popup">
 		<h3>Загрузка файла на сервер</h3>
 		<form action="../engine/uploadImage.php" method="POST" enctype="multipart/form-data">
-			<input type="file" name="file">
-			<input type="submit" name="upload">
+			<input type="file" name="file" onchange="showChoosenImage(this)">
+			<input type="submit" name="upload" value="Загрузить">
 		</form>
+        <div id="images">
+
+        </div>
 	</div>
 	<!-- /.popup -->
 
@@ -34,6 +37,7 @@ ini_set('display_startup_errors', 1);
     <!-- /.bottomBlk -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/functions.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>
