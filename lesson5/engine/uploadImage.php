@@ -27,7 +27,7 @@ ini_set('display_startup_errors', 1);
 			$originalImageDest = '../public/img/gallery/original';
 			$thumbnailImageDest = '../public/img/gallery/thumbnail';
 
-			if($imageinfo['mime'] != 'image/jpeg') {
+			if($imageinfo['mime'] != 'image/png') {
 
 				print_r($imageinfo);
 				echo "Загружаемый файл не картинка формата JPEG или PNG!";
@@ -36,13 +36,13 @@ ini_set('display_startup_errors', 1);
 				if (move_uploaded_file($file, "$originalImageDest/$filename")) {
 
 					create_thumbnail("$originalImageDest/$filename", "$thumbnailImageDest/thumb-$filename", 500, 300);
+                    echo "УРА! Файл успешно загружен<br>";
 
 					$sql = "INSERT INTO `gallery` (`img-name`, `img-path-full`, `img-path-thumb`, `img-desc`) VALUE
 							('$filename', 'img/gallery/original/$filename', 'img/gallery/thumbnail/thumb-$filename', '$filename')";
 
 					dbExecuteQuery($sql);
 
-					echo "УРА! Файл успешно загружен";
 
 				} else {
 				    echo "Не удалось записать файл на сервер";

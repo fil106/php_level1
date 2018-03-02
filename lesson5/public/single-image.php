@@ -1,6 +1,7 @@
-<?php	if(isset($_GET['id'])): ?>
+<?php if(isset($_GET['id'])): ?>
 
 	<?php
+        echo 1;
 		require_once('../config/config.php');
 		require_once('../engine/db/functions.php');
 
@@ -31,8 +32,8 @@
 			<div id="gallery" class="row justify-content-md-center">
 				<?php if(isset($error['insert'])): ?>
 					<p class="error">Ошибка увеличения числа просмотров фотографии</p>
-				<? endif; ?>
-				<img width="80%" height="70%" src="<?= $arrResult['img-path-full'] ?>" alt="<?= $arrResult['img-name'] ?>">
+				<?php endif; ?>
+				<img width="50%" src="<?= $arrResult['img-path-full'] ?>" alt="<?= $arrResult['img-name'] ?>">
 			</div>
 		</div>
 
@@ -48,4 +49,4 @@
 	</body>
 	</html>
 
-<? endif; ?>
+<?php endif; ?>
