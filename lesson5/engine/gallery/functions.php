@@ -7,7 +7,7 @@
     $galleryHtml = '';
 
     while($row = mysqli_fetch_assoc($result)) {
-      $galleryHtml .= gallerySingleImage($row['img-path-full'], $row['img-path-thumb'], $row['img-desc']);
+      $galleryHtml .= gallerySingleImage($row['img-path-thumb'], $row['img-desc'], $row['id']);
     }
 
     if (empty($galleryHtml)) {
@@ -18,10 +18,10 @@
 
   }
 
-  function gallerySingleImage($hrefFull, $hrefThumb, $desc) {
+  function gallerySingleImage($hrefThumb, $desc, $id) {
 
     $str = "<div class='col-3 galery-image'>";
-      $str .= "<a href='" . $hrefFull . "'><img src='" . $hrefThumb . "' alt='" . $desc . "'></a>";
+      $str .= "<a href='single-image.php?id=" . $id . "'><img src='" . $hrefThumb . "' alt='" . $desc . "'></a>";
     $str .= "</div>";
 
     return $str;

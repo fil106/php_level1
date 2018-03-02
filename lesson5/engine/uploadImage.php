@@ -27,9 +27,9 @@ ini_set('display_startup_errors', 1);
 			$originalImageDest = '../public/img/gallery/original';
 			$thumbnailImageDest = '../public/img/gallery/thumbnail';
 
-			if($imageinfo['mime'] != 'image/png') {
+			if($imageinfo['mime'] != 'image/jpeg') {
 
-			    print_r($imageinfo);
+				print_r($imageinfo);
 				echo "Загружаемый файл не картинка формата JPEG или PNG!";
 
 			} else {
@@ -42,9 +42,11 @@ ini_set('display_startup_errors', 1);
 
 					dbExecuteQuery($sql);
 
+					echo "УРА! Файл успешно загружен";
+
 				} else {
 				    echo "Не удалось записать файл на сервер";
-                }
+				}
 			}
 		}
 	}
