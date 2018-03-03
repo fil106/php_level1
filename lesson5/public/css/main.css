@@ -1,0 +1,85 @@
+.popup {
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    background-color: #eee;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 5px 5px rgba(32,178,170,.5);
+    text-align: center;
+    display: none;
+    z-index: 9001;
+}
+
+.popup h3 {
+    margin-bottom: 30px;
+}
+
+.bottomBlk {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    padding: 20px;
+    z-index: 9000;
+}
+
+#addImg {
+    float: right;
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
+
+.turnBack-btn {
+    float: left;
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
+
+.turnBack-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#addImg:hover {
+    cursor: pointer;
+}
+
+.galery-image {
+    padding: 10px 0;
+}
+
+.galery-image img {
+    width: 100%;
+}
+
+#gallery {
+    padding: 10px 20px 20px 20px;
+}
+
+.choosenImage {
+    width: 25%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}

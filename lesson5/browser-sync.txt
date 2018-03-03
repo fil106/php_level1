@@ -1,0 +1,1 @@
+browser-sync start --proxy "gallery.loc" --files "public/*.html, public/css/*.css, public/js/*.js, public/*.php"
