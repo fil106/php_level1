@@ -250,6 +250,15 @@ main {
     margin-bottom: 30px;    
     padding: 10px 10px 40px 10px;
     position: relative;
+    transition: all .3s;
+}
+
+.catalog .item:hover {
+    background-color: #e3e3e3;
+}
+
+.catalog .item a:hover {
+    text-decoration: none;
 }
 
 .catalog .item img {

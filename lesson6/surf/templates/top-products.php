@@ -6,11 +6,7 @@
 
 		<?php foreach ($content['top_product'] as $item): ?>
 
-			<div class="item">
-				<img src="<?= $item['foto'] ?>" alt="<?= $item['name'] ?>">
-				<span class="item_name"><?= $item['name'] ?></span>
-				<span class="item_price">€ <?= $item['price'] ?></span>
-			</div>
+			<?php include 'item.php' ?>
 
 		<?php endforeach; ?>
 

@@ -17,6 +17,10 @@ function prepareVariables($page_name)
 			$vars['top_product'] = TopProduct();
 			$vars['sale_product'] = SaleProduct();
 		break;
+
+		case "good":
+			echo $url_array[2];
+		break;
 		
 		case "contact":
 		
@@ -50,5 +54,10 @@ function TopProduct()
 function SaleProduct()
 {
 	$sql = 'select * from goods where status = "2" order by view desc limit 3;';
+	return getAssocResult($sql);
+}
+
+function singleGood($name) {
+	$sql = "select * from goods where name = '$name'";
 	return getAssocResult($sql);
 }
