@@ -17,11 +17,14 @@
 		$page_name = $url_array[1];
 	}
 
-	$content = prepareVariables($page_name);
+	$idProduct = $url_array[2];
+	$content = prepareVariables($page_name, $idProduct);
 
 	echo "<pre>";
 	//print_r($url_array);
 		print_r($content);
 	echo "</pre>";
 
-	require 'templates/bases.php';
+	$templatePath = $content['content'];
+
+	require $templatePath;
