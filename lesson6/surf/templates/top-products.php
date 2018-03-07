@@ -6,7 +6,7 @@
 
 		<?php foreach ($content['top_product'] as $item): ?>
 
-			<?php include 'item.php' ?>
+			<?= getItemHtml('hot', $item) ?>
 
 		<?php endforeach; ?>
 

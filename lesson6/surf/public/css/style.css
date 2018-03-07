@@ -601,7 +601,6 @@ footer {
 }
 
 .product {
-    height: 370px;
     width: 370px;
     background-color: #eaeaea;
 }
@@ -720,4 +719,14 @@ footer {
 @media screen and (max-width: 1320px) {
     .blk-p {display: block; margin-bottom: 90px;}
     .product {margin: auto;}
+}
+
+.error-page {
+    padding: 20px;
+}
+
+.header_not_found {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 }

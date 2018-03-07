@@ -1,6 +1,6 @@
 <div class="content">
 	<div class="breadcrumbs">
-		<a href="../index.php">Home</a> » <a href="#">Apparel</a> » <a href="#">Women</a> » <a class="active" href="#"><?= $content['single_product'][0]['name'] ?></a>
+		<a href="/">Home</a> » <a href="#">Apparel</a> » <a href="#">Women</a> » <a class="active" href="#"><?= $content['single_product'][0]['name'] ?></a>
 	</div>
 	<div class="blk-p">
 		<div class="left">
@@ -9,9 +9,9 @@
 					<img width="100%" src="<?= $content['single_product'][0]['foto'] ?>" alt="<?= $content['single_product'][0]['name'] ?>">
 				</div>
 				<div class="thumbs">
-					<img src="../img/img.png" alt="Заглушка">
-					<img src="../img/img.png" alt="Заглушка">
-					<img src="../img/img.png" alt="Заглушка">
+					<img src="/img/img.png" alt="Заглушка">
+					<img src="/img/img.png" alt="Заглушка">
+					<img src="/img/img.png" alt="Заглушка">
 				</div>
 			</div>
 		</div>
@@ -37,18 +37,18 @@
 		<h1>You might also like</h1>
 		<div class="catalog">
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.865.00</span>
 			</div>
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.770.50</span>
 				<span class="item_old_price">€.1.270.15</span>
 			</div>
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.865.00</span>
 			</div>
@@ -58,18 +58,18 @@
 		<h1>Recently viewed</h1>
 		<div class="catalog">
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.865.00</span>
 			</div>
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.770.50</span>
 				<span class="item_old_price">€.1.270.15</span>
 			</div>
 			<div class="item">
-				<img src="../img/img.png" alt="заглушка">
+				<img src="/img/img.png" alt="заглушка">
 				<span class="item_name">Single Thruster 2014</span>
 				<span class="item_price">€.865.00</span>
 			</div>

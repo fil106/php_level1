@@ -14,7 +14,7 @@ RewriteCond %{REQUEST_FILENAME} -d [NC]
 RewriteRule .* - [L]
 
 
-#site.ru/cat/dev/, сервер через .htaccess будет обрабатывать команду — site.ru?id=cat&p=dev 
+#site.ru/cat/dev/, сервер через .htaccess будет обрабатывать команду — site.ru?id=cat&p=dev
 #RewriteRule ^([a-z]+)/([a-z]+)/$ ?id=$1&p=$2 [L]
 # site.ru/primer/, сервер через .htaccess будет обрабатывать команду — site.ru?id_news=primer
 #RewriteRule ^([a-z]+)/$ ?id_news=$1 [L]

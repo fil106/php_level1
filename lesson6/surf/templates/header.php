@@ -6,7 +6,7 @@
 		<div class="container">
 			<header class="header_general">
 				<div class="logo">
-					<a href="index.html"><img class="logo_img" src="img/logo.png" alt="Logotype SurfHouse"></a>
+					<a href="/"><img class="logo_img" src="/img/logo.png" alt="Logotype SurfHouse"></a>
 					<div class="welcome">
 						<h1>Welcome to SurfHouse</h1>
 						<p>The only online store you will ever need for all your windsurfing and kitesurfing and SUP needs</p>
@@ -14,11 +14,11 @@
 				</div>
 				<div class="logo_right">
 					<div class="social_btn">
-						<a href="facebook.com"><img src="img/social/facebook.png" alt="Facebook"></a>
-						<a href="twitter.com"><img src="img/social/twitter.png" alt="Twitter"></a>
-						<a href="youtube.com"><img src="img/social/youtube.png" alt="YouTube"></a>
-						<a href="pinterest.com"><img src="img/social/pinterest.png" alt="Pinterest"></a>
-						<a href="instagram.com"><img src="img/social/insta.png" alt="Instagram"></a>
+						<a href="facebook.com"><img src="/img/social/facebook.png" alt="Facebook"></a>
+						<a href="twitter.com"><img src="/img/social/twitter.png" alt="Twitter"></a>
+						<a href="youtube.com"><img src="/img/social/youtube.png" alt="YouTube"></a>
+						<a href="pinterest.com"><img src="/img/social/pinterest.png" alt="Pinterest"></a>
+						<a href="instagram.com"><img src="/img/social/insta.png" alt="Instagram"></a>
 					</div>
 					<div class="sale">
 						<h1>JP FUNRIDE 2014</h1>

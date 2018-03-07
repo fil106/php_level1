@@ -6,7 +6,7 @@
 
 		<?php foreach ($content['new_product'] as $item): ?>
 
-      <?php include 'item.php' ?>
+      <?= getItemHtml('new', $item) ?>
 
 		<?php endforeach; ?>
 

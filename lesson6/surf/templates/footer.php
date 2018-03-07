@@ -56,13 +56,13 @@
 	</div>
 	<div class="copyright">
 		<div class="container">
-			<p>© 2017  SURFHOUSE. All rights reserved - Designed by theuncreativelab.com</p>
+			<p>© <?= date('Y') ?>  SURFHOUSE All rights reserved - Designed by theuncreativelab.com</p>
 			<div class="social_btn_footer">
-				<a href="facebook.com"><img src="img/social/facebook.png" alt="Facebook"></a>
-				<a href="twitter.com"><img src="img/social/twitter.png" alt="Twitter"></a>
-				<a href="youtube.com"><img src="img/social/youtube.png" alt="YouTube"></a>
-				<a href="pinterest.com"><img src="img/social/pinterest.png" alt="Pinterest"></a>
-				<a href="instagram.com"><img src="img/social/insta.png" alt="Instagram"></a>
+				<a href="facebook.com"><img src="/img/social/facebook.png" alt="Facebook"></a>
+				<a href="twitter.com"><img src="/img/social/twitter.png" alt="Twitter"></a>
+				<a href="youtube.com"><img src="/img/social/youtube.png" alt="YouTube"></a>
+				<a href="pinterest.com"><img src="/img/social/pinterest.png" alt="Pinterest"></a>
+				<a href="instagram.com"><img src="/img/social/insta.png" alt="Instagram"></a>
 			</div>
 		</div>
 	</div>
