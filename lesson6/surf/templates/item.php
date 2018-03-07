@@ -1,6 +1,6 @@
 <div class="item">
 
-  <a href="?good/<?= 'id=' . $item['id_good'] ?>">
+  <a href="good/<?= $item['id_good'] ?>">
 
     <span class="item_new"></span>
 

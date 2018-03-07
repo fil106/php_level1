@@ -7,20 +7,19 @@ define('ERROR_TEMPLATE_EMPTY', 2);
 
 //Функция получает переменные в зависимости от выбранной страницы. news или newspage или feedback
 
-function prepareVariables($page_name, $idProduct)
+function prepareVariables($page_name)
 {
 	switch ($page_name){
 	
 		case "index":
-			$vars['content'] = '../templates/bases.php';
+			$vars['content'] = '../templates/index.php';
 			$vars['new_product'] = NewProduct();
 			$vars['top_product'] = TopProduct();
 			$vars['sale_product'] = SaleProduct();
 		break;
 
-		case "?good":
+		case "good":
 			$vars['content'] = '../templates/single-product.php';
-			$vars['single_product'] = singleGood(str_replace('id=', '', $idProduct));
 		break;
 		
 		case "contact":

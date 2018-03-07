@@ -6,7 +6,11 @@
 
       <?php include 'sidebar-left.php' ?>
 
-      <?php include 'content.php' ?>
+			<div class="content">
+
+				<?php include $content['content'] ?>
+
+			</div>
 
       <div class="brands"></div>
 
@@ -18,7 +22,7 @@
         <a class="social_p" href="#"><img src="img/social/big/p.png" alt="pinterest"></a>
       </div>
 
-      </main>
+		</main>
 
   </div>
 

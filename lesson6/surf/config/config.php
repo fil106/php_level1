@@ -3,7 +3,7 @@ define('SITE_ROOT', '../');
 define('WWW_ROOT', '../public');
 
 /* DB config */
-define('HOST', 'localhost');
+define('HOST', '192.168.88.33');
 define('USER', 'root');
 define('PASS', '2402');
 define('DB', 'GU');

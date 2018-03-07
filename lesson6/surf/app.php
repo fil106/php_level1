@@ -5,7 +5,7 @@
 	require_once('engine/db.php');
 
 	echo "<pre>";
-	//print_r($_SERVER);
+//	print_r($_SERVER);
 	//print_r($_GET);
 	echo "</pre>";
 
@@ -17,14 +17,11 @@
 		$page_name = $url_array[1];
 	}
 
-	$idProduct = $url_array[2];
-	$content = prepareVariables($page_name, $idProduct);
+	$content = prepareVariables($page_name);
 
 	echo "<pre>";
 	//print_r($url_array);
 		print_r($content);
 	echo "</pre>";
 
-	$templatePath = $content['content'];
-
-	require $templatePath;
+	require 'templates/bases.php';
