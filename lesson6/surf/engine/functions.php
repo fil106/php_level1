@@ -19,19 +19,29 @@ function prepareVariables($page_name)
 
 		case "good":
 			$id_good = getUriArr('/')[2];
-			if (isset($id_good)) {
-				$vars['content'] = '../templates/single-product.php';
+			if ($id_good > 0) {
+				$vars['content'] = '../templates/goods/single-product.php';
 				$vars['single_product'] = singleGood($id_good);
+			} else {
+				$vars['content'] = '../templates/404.php';
 			}
 		break;
 		
 		case "contact":
 		
 		break;
-		
+
+		case "auth":
+			$vars['content'] = '../templates/auth/auth.php';
+		break;
+
 		case "register":
-		
-		break;	
+			$vars['content'] = '../templates/register/register.php';
+		break;
+
+		case "register-access":
+			$vars['content'] = '../templates/register/register-access.php';
+			break;
 		
 		case "feedback":
 		
