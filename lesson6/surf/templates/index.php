@@ -1,5 +1,5 @@
-<?php include 'new-products.php' ?>
+<?php include 'goods/new-products.php' ?>
 
-<?php include 'top-products.php' ?>
+<?php include 'goods/top-products.php' ?>
 
-<?php include 'sale-products.php' ?>
+<?php include 'goods/sale-products.php' ?>
