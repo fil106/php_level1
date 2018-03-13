@@ -21,9 +21,11 @@
 
     } else {
 
+			mysqli_close($db);
       printf("Не удалось выполнить sql запрос");
+      exit;
 
-    };
+    }
 
 	}
 
@@ -53,8 +55,10 @@
 
     } else {
 
+			mysqli_close($db);
       printf("Не удалось выполнить sql запрос");
+      exit;
 
-    };
+    }
 
 	}
